@@ -33,9 +33,9 @@ export default function AmazonScreen() {
     const connection = new Connection(clusterApiUrl('devnet'), 'confirmed')
 
     /* Create a payment request link */
-    const payment_recipient = new PublicKey('E3z9bv1GbWMceWQ34Waxcgi3C6c9FQevYSbjPckY8Ccp') // <- Merchant address
-    const payment_amount = new BigNumber(0.001643) // <- Item price
-    const splToken = new PublicKey('4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU') // <- Token address
+    const payment_recipient = new PublicKey('6FWagxFAy4jKyQLyLanrFKP7rWEPKt2c1KKGkaJPNi9R') // <- Merchant address
+    const payment_amount = new BigNumber(16.43) // <- Item price
+    const splToken = new PublicKey('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263') // <- Token address
     const payment_reference = new Keypair().publicKey // <- Reference(key) for tracking/validating transaction
     const payment_label = 'Savita Gems'
     const payment_message =
